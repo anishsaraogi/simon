@@ -49,6 +49,8 @@ function checkAnswer(currentLevel) {
 
     //1. In the sounds folder, there is a sound called wrong.mp3, play this sound if the user got one of the answers wrong.
     playSound("wrong");
+    
+    started = false;
 
     //2. In the styles.css file, there is a class called "game-over", apply this class to the body of the website when the user gets one of the answers wrong and then remove it after 200 milliseconds.
     $("body").addClass("game-over");
